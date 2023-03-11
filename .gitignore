@@ -24,3 +24,9 @@ wanda-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# ElixirLS VSCode extension folder.
+.elixir_ls/
+
+# Env variables
+.env
