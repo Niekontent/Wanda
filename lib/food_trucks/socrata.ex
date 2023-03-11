@@ -61,7 +61,7 @@ defmodule SocrataImpl do
 
   defp client do
     middleware = [
-      {Tesla.Middleware.BaseUrl, "https://data.sfgov.org"},
+      {Tesla.Middleware.BaseUrl, Application.get_env(:wanda, :socrata_base_url)},
       Tesla.Middleware.JSON
     ]
 
