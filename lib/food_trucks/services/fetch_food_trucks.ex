@@ -17,5 +17,5 @@ defmodule FoodTrucks.Services.FetchFoodtrucks do
 
   defp normalise(_), do: []
 
-  defp socrata_api, do: Socrata.current() |> IO.inspect()
+  defp socrata_api, do: Socrata.current()
 end

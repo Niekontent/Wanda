@@ -9,7 +9,7 @@ defmodule Socrata do
 
   def current do
     Application.get_env(
-      :food_trucks,
+      :wanda,
       :socrata_impl,
       SocrataImpl
     )
