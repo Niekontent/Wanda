@@ -120,7 +120,7 @@ defmodule FoodTrucksTest do
         {:ok, mocked_body}
       end)
 
-      assert %FoodTruck{} == FoodTrucksImpl.fetch_food_truck("1652610")
+      assert %FoodTruck{} = FoodTrucksImpl.fetch_food_truck("1652610")
     end
   end
 end
