@@ -5,7 +5,7 @@ defmodule FoodTrucks do
 
   @callback fetch_food_trucks(coordinates :: map()) :: list()
 
-  @callback fetch_food_truck(truck_id :: String.t()) :: list()
+  @callback fetch_food_truck(truck_id :: String.t()) :: any() | nil
 end
 
 defmodule FoodTrucksImpl do
